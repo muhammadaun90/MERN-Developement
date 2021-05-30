@@ -28,24 +28,37 @@ function isValidEmail(email){
     return re.test(String(email).toLowerCase());
 }
 
-//Function to check if required fields have data
-function checkRequired(inputArray){
-    inputArray.forEach(function(input){
-        if (input.value === ''){
-            showError(input,`${getFieldId(input)} is required`);
-        }else {
-            showSuccess(input);
-        }
-    });
-}
-// Function to get the id of the field with proper case
-function getFieldId(input){
-    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-}
+// Event listeners
 // Create  event listener for submit button
 form.addEventListener('submit', function(e) {
     // Stop page on reloading on submit
     e.preventDefault();
-    checkRequired([username,email,password,password2]);
-    
+    //console.log('Submitted');
+   // console.log(username.value);
+    // Check if username input is empty
+    if(username.value === ''){
+        showError(username, 'Username is required');
+    } else{
+        showSuccess(username);
+    }
+    // Check if email input is empty
+    if(email.value === ''){
+        showError(email, 'Email is required');
+    } else  if (!isValidEmail(email.value)){
+        showError(email, 'Invalid Email');
+    } else{
+        showSuccess(email);
+    }
+    // Check if password input is empty
+    if(password.value === ''){
+        showError(password, 'Password is required');
+    } else{
+        showSuccess(password);
+    }
+    // Check if password2 input is empty
+    if(password2.value === ''){
+        showError(password2, 'Confirm Password is required');
+    } else{
+        showSuccess(password2);
+    }
 });
