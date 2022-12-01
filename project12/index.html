@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Game</title>
+</head>
+<body>
+    <button id="form">
+
+        <i class="fas fa-tools fa 2x"></i>
+    </button>
+    <!-- Settings section -->
+    <div class="settings" id="setting">
+        <!-- Difficulty Settings -->
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <!-- Main Game Container -->
+    <div class="container">
+        <!-- Heading -->
+        <h2>Fast Typing Game</h2>
+        <!-- Instructions for Player -->
+        <p>Type this word as fast as you can</p>
+        <!-- Word to type -->
+        <h1 id="word">Name</h1>
+        <!-- INput for user to type the displayed word -->
+        <input type="text" id="user-word" placeholder="Please type here" autocomplete="off" />
+        <!-- Timer Container -->
+        <p class="timer">
+            Time Remaining: <span id="time">60s</span>
+        </p>
+        <!-- Score Container -->
+        <p class="scorecard">
+            Score: <span id="score">0</span>
+        </p>
+    </div>
+    <!-- End of Game Container -->
+    <div class="gameover" id="gameover"></div>
+    <script src="script.js"></script>
+</body>
+</html>
