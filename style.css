@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar{
+    background-color: yellow;
+    width: 20vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+.sidebar nav{
+    padding: 50px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 30px;
+}
+.main{
+    background-color: green;
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.info{
+    background-color: rgb(55, 200, 18);
+    height: 45vh;
+    width: 80vw;
+}
