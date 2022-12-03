@@ -120,3 +120,9 @@ nav ul li a:hover::after{
     color: #ff0;
     font-size: 14px;
 }
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
