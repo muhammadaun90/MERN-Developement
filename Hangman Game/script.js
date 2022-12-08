@@ -15,7 +15,7 @@ const words = ["teach","judge","thread","air","be","aside","due","writer","aware
 // Let selectedWord = word[]
 //console.log(Math.random());
 //console.log(words.length);
-let selectedWord = word[Math.floor(Math.random()) * ];
+let selectedWord = word[Math.floor(Math.random()) * words];
 
 // Tracking arrays for correct and incorrect guesses
 const correctLettersArray = [];
