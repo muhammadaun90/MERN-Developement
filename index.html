@@ -16,11 +16,11 @@
             <nav>
                 <img src="images/Aunlogo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -201,10 +201,11 @@
                     <div class="contact-right">
                         <form>
                             <input type="text" name="Name" placeholder="Enter your name" required>
-                            <input type="text" name="email" placeholder="Enter your email" required>
+                            <input type="text" name="Email" placeholder="Enter your email" required>
                             <textarea name="message" rows="6" placeholder="Enter your message please"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -369,6 +372,11 @@ nav .fas{
         flex-basis: 100%;
     }
     .copyright{
-        font-size: 14px;        
+        font-size: 14px;
     }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
