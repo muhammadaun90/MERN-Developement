@@ -28,8 +28,13 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 140px;
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+  
+.logo span {
+    color: #ff0;
 }
 nav ul li{
     display: inline-block;
